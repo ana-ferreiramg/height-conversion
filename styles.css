@@ -1,0 +1,120 @@
+* {
+    --color-primary: #9cc5c7;
+    --color-btn: #639fa4;
+    --color-btn-hover: #5f9499;
+    --color-text: #363434;
+    --color-text-btn: #e5e5e5;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 60%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.converter {
+    margin: auto;
+    background-color: var(--color-primary);
+    padding: 2rem;
+    max-width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: -1px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.converter h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--color-text);
+    margin: 3rem 0 6rem;
+}
+
+.inputs label,
+.inputs input,
+.result span {
+    font-size: 2.4rem;
+    color: var(--color-text);
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.inputs label {
+    width: 100px;
+}
+
+.inputs input {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 1rem;
+}
+
+.inputs input:focus {
+    border: 2px solid #639fa4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    margin: 4rem 0;
+    width: 60%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    background-color: var(--color-btn);
+    color: #ffffff;
+    font-size: 2.4rem;
+    outline: none;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.btn button:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.result {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 3rem;
+}
+
+@media (min-width: 500px) {
+    .converter {
+        margin-top: 10vh;
+        height: 600px;
+    }
+}
